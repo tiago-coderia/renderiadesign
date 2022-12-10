@@ -11,9 +11,9 @@ export default function Home() {
         
       </Head>
       <main className='flex flex-col gap-5'>
-        <div className='text-center'>
-          <h1 className='font-JetBrains text-3xl font-bold' >Hello world!</h1>
-          <h3 className='font-JetBrains text-2xl font-light' >My name is Jonathan Tiago</h3>
+        <div className='text-center mx-10'>
+          <h1 className='font-JetBrains text-3xl md:text-3xl font-bold' >Hello world!</h1>
+          <h3 className='font-JetBrains text-lg md:text-2xl font-light' >My name is Jonathan Tiago</h3>
         </div>
         <div className='mx-10 max-w-[600px]'>
           I'm a 33 years-old Brazilian front-end designer and developer who cares about design and 3d.
@@ -31,8 +31,9 @@ export default function Home() {
           <p><a href="https://www.behance.net/gallery/142739235/CGI-Valvula-Click-Roco" target="_blank" className='hover:underline'>válcula click • 3D dev</a></p>
           <p><a href="https://www.behance.net/gallery/144126883/Estampas-Desenvolvimento" target="_blank" className='hover:underline'>t-shirts random • illustration</a></p>
         </div>
-        <div className="mx-10">
-        <a href="mailto:asimplekreative@gmail.com"><img src="mail.svg" alt="" width={20}/></a>
+        <div className="mx-10 flex gap-2 items-center">
+        <a href="mailto:asimplekreative@gmail.com"><img src="mail.svg" alt="" width={25}/></a>
+        <a href="https://www.linkedin.com/in/jonathantiiago/" target="_blank"><img src="linkedin.svg" alt="" width={20}/></a>
         </div>
       </main>
 
