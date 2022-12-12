@@ -4,6 +4,21 @@
 
 @layer base {
   body {
-    @apply bg-[#202020] text-lightning font-JetBrains;
+    @apply bg-[#2e2e2e] text-lightning font-JetBrains transition-all;
+  }
+  body.lightning {
+    @apply bg-[#eeeeee] text-darken font-JetBrains transition-all;
+  }
+
+  body.lightning .mailing {
+    stroke: #2e2e2e !important;
+  }
+
+  body.lightning .instagram {
+    fill: #2e2e2e !important;
+  }
+
+  a:hover {
+    cursor: pointer;
   }
 }

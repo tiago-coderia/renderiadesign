@@ -10,7 +10,8 @@ module.exports = {
         'JetBrains': 'JetBrains Mono'
       },
       colors: {
-        'lightning': '#fff'
+        'lightning': '#eeeeee',
+        'darken': '#212121'
       }
     },
   },
