@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-      <div className='flex items-center justify-center w-screen h-auto md:h-screen my-5 lg:my-auto'>
+      <div className='flex items-center justify-center w-screen h-auto md:h-screen my-5 md:my-auto'>
         <Head>
           <title>asimplekreative.</title>
           <meta name="description" content="designer by Hawkzera" />
