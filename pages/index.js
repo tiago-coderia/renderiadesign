@@ -17,18 +17,16 @@ export default function Home() {
         <button className="btn btnClickMe bg-lightning text-darken hover:bg-darken hover:text-lightning p-2 transition-all">
           Click Me
         </button>
-        <a
-          className="btn bg-lightning text-darken hover:bg-darken hover:text-lightning p-2 transition-all"
-          href="cv.pdf"
-          target="_blank"
-        >
-          Resume
+        <a href="cv.pdf" target="_blank">
+          <button className="btn bg-lightning text-darken hover:bg-darken hover:text-lightning p-2 transition-all">
+            Resume
+          </button>
         </a>
       </div>
       <main className="w-screen h-screen snap-y snap-mandatory overflow-y-scroll">
         <div className="w-full h-screen snap-start flex justify-center items-center">
           <div className="w-[960px]">
-            <h1 className="font-JetBrains text-2xl md:text-5xl font-bold">
+            <h1 className="font-JetBrains text-2xl md:text-5xl font-bold text-sunshine">
               Hey, how's it going? 👋
             </h1>
             <h3 className="font-JetBrains text-lg md:text-2xl font-light">
@@ -67,9 +65,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen snap-start bg-backgroundtwo flex justify-center items-center">
+        <div className="w-full h-screen snap-start flex justify-center items-center about-section">
           <div className="w-[960px]">
-            <h1 class="text-2xl">About</h1>
+            <h1 class="text-2xl text-sunshine">About</h1>
             <p>
               I'm a 33 years-old Brazilian front-end designer and developer who
               cares about design and 3d. After graduating from the Many Schools
@@ -129,7 +127,7 @@ export default function Home() {
         </div>
         <div className="w-full h-screen snap-start flex justify-center items-center">
           <div className="w-[960px]">
-            <h1 class="text-2xl">Selected Works</h1>
+            <h1 class="text-2xl text-sunshine">Selected Works</h1>
             <p>
               <a
                 href="http://www.tatifashionmkt.com.br/"
