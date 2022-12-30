@@ -7,13 +7,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'JetBrains': 'JetBrains Mono'
+        JetBrains: "JetBrains Mono",
       },
       colors: {
-        'lightning': '#eeeeee',
-        'darken': '#212121'
-      }
+        lightning: "#eeeeee",
+        darken: "#212121",
+        backgroundone: "rgb(28, 28, 28)",
+        backgroundtwo: "rgb(38, 38, 38)",
+      },
     },
   },
   plugins: [],
-}
+};
