@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <main className="w-screen h-screen snap-y snap-mandatory overflow-y-scroll">
         <div className="w-full h-screen snap-start flex justify-center items-center">
-          <div className="w-[960px]">
+          <div className="w-[960px] mx-3 md:mx-0">
             <h1 className="font-JetBrains text-2xl md:text-5xl font-bold text-sunshine">
               Hey, how's it going? 👋
             </h1>
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-screen snap-start flex justify-center items-center about-section">
-          <div className="w-[960px]">
+          <div className="w-[960px] mx-3 md:mx-0">
             <h1 class="text-2xl text-sunshine">About</h1>
             <p>
               I'm a 33 years-old Brazilian front-end designer and developer who
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-screen snap-start flex justify-center items-center">
-          <div className="w-[960px]">
+          <div className="w-[960px] mx-3 md:mx-0">
             <h1 class="text-2xl text-sunshine">Selected Works</h1>
             <p>
               <a
