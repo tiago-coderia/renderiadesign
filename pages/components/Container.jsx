@@ -25,22 +25,37 @@ function Container() {
         </div>
         <div className="box__social_links">
           <a href="https://www.linkedin.com/in/jonathantiiago/" target="_blank">
-            <i className="fa-brands fa-linkedin-in"></i>
+            <i
+              className="fa-brands fa-linkedin-in"
+              title="Acesse meu Linkedin!"
+            ></i>
           </a>
           <a href="https://github.com/tiago-coding" target="_blank">
-            <i className="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github" title="Let's Code!"></i>
           </a>
           <a href="https://www.behance.net/askdot" target="_blank">
-            <i className="fa-brands fa-behance"></i>
+            <i className="fa-brands fa-behance" title="Acesse meu Behance!"></i>
           </a>
           <a href="https://www.instagram.com/jonathan.tiiago/" target="_blank">
-            <i className="fa-brands fa-instagram"></i>
+            <i
+              className="fa-brands fa-instagram"
+              title="Me siga no Instagram"
+            ></i>
           </a>
           <a href="https://dribbble.com/askdot" target="_blank">
-            <i className="fa-brands fa-dribbble"></i>
+            <i
+              className="fa-brands fa-dribbble"
+              title="Acesse meu Dribbble"
+            ></i>
           </a>
           <a href="http://wa.me/5547997926722" target="_blank">
-            <i className="fa-brands fa-whatsapp"></i>
+            <i
+              className="fa-brands fa-whatsapp"
+              title="Me chame no Whatsapp"
+            ></i>
+          </a>
+          <a href="cv.pdf" target="_blank">
+            <i class="fa-regular fa-file-pdf" title="Baixe meu CV"></i>
           </a>
         </div>
       </div>
