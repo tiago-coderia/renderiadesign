@@ -120,4 +120,10 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  .box {
+    width: 380px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
