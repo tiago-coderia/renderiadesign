@@ -122,7 +122,11 @@ a {
 
 @media (max-width: 400px) {
   .box {
-    width: 380px;
+    width: 350px;
+    height: 490px;
+  }
+  .spinImage {
+    top: 36px;
   }
 }
 
