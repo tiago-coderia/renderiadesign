@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #313f47;
+  font-family: "Source Sans Pro";
+  animation: starting 3s ease-in-out;
+}
+
+a {
+  color: #313f47;
+  transition: 0.5s ease-in-out;
+}
+
+.box {
+  width: 500px;
+  height: 600px;
+  background: white;
+  transform: rotate(0);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  animation: rotateAnimation 1s ease-in-out 0.5s forwards;
+}
+.box::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #c8cccf;
+  z-index: -1;
+  top: 36%;
+}
+.box::after {
+  position: absolute;
+  content: "";
+  width: 209px;
+  aspect-ratio: 1/1;
+  background: url("../media/textanim.svg") no-repeat center center;
+  z-index: 1;
+  top: 110px;
+  animation: spin 20s linear infinite;
+}
+.box img {
+  object-fit: cover;
+  box-shadow: 0 0 0 1.5em #fff;
+  border-radius: 50%;
+  position: relative;
+  pointer-events: none;
+}
+.box__texts {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.box__texts h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.box__texts h3 {
+  font-weight: 300;
+}
+.box__social_links {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.box__social_links:has(a:hover) a:not(:hover) {
+  filter: blur(1px);
+  opacity: 0.2;
+}
+
+@keyframes starting {
+  from {
+    background: black;
+  }
+  to {
+    background: white;
+  }
+}
+@keyframes rotateAnimation {
+  from {
+    transform: rotatex(45deg);
+    opacity: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  to {
+    transform: rotatex(0);
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
