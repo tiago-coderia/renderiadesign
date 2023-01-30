@@ -15,6 +15,7 @@ body {
   color: #313f47;
   font-family: "Source Sans Pro";
   animation: starting 3s ease-in-out;
+  overflow-x: hidden;
 }
 
 a {
@@ -120,13 +121,13 @@ a {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .box {
     width: 350px;
     height: 490px;
   }
   .spinImage {
-    top: 36px;
+    top: 35px;
   }
 }
 

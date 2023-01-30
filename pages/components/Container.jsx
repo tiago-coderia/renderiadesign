@@ -28,34 +28,28 @@ function Container() {
             <i
               className="fa-brands fa-linkedin-in"
               title="Acesse meu Linkedin!"
-            ></i>
+            />
           </a>
           <a href="https://github.com/tiago-coding" target="_blank">
-            <i className="fa-brands fa-github" title="Let's Code!"></i>
+            <i className="fa-brands fa-github" title="Let's Code!" />
           </a>
           <a href="https://www.behance.net/askdot" target="_blank">
-            <i className="fa-brands fa-behance" title="Acesse meu Behance!"></i>
+            <i className="fa-brands fa-behance" title="Acesse meu Behance!" />
           </a>
           <a href="https://www.instagram.com/jonathan.tiiago/" target="_blank">
             <i
               className="fa-brands fa-instagram"
               title="Me siga no Instagram"
-            ></i>
+            />
           </a>
           <a href="https://dribbble.com/askdot" target="_blank">
-            <i
-              className="fa-brands fa-dribbble"
-              title="Acesse meu Dribbble"
-            ></i>
+            <i className="fa-brands fa-dribbble" title="Acesse meu Dribbble" />
           </a>
           <a href="http://wa.me/5547997926722" target="_blank">
-            <i
-              className="fa-brands fa-whatsapp"
-              title="Me chame no Whatsapp"
-            ></i>
+            <i className="fa-brands fa-whatsapp" title="Me chame no Whatsapp" />
           </a>
           <a href="cv.pdf" target="_blank">
-            <i class="fa-regular fa-file-pdf" title="Baixe meu CV"></i>
+            <i className="fa-regular fa-file-pdf" title="Baixe meu CV" />
           </a>
         </div>
       </div>
