@@ -20,7 +20,20 @@ export default function Home() {
       <main>
         <div class="container">
           <div class="box">
-            <Image src="/profile.jpg" alt="" width="220" height="220" />
+            <Image
+              src="/textanim.svg"
+              alt=""
+              width="245"
+              height="245"
+              className="spinImage"
+            />
+            <Image
+              src="/profile.jpg"
+              alt=""
+              width="220"
+              height="220"
+              className="profileImage"
+            />
             <div class="box__texts">
               <h1>JONATHAN TIAGO</h1>
               <h3>DESIGN & FRONT-END DEVELOPER</h3>
