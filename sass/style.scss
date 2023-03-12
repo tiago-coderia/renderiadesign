@@ -1,0 +1,182 @@
+@import "components/mixins";
+@import "components/layout";
+@import "components/defaut";
+@import "components/typography";
+@import "components/responsivity";
+
+header {
+  height: 10rem;
+  @include flex-center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    .get-in-touch {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      ion-icon {
+        color: var(--default);
+        width: 2.2rem;
+        height: 2.2rem;
+        background: rgb(26, 26, 26);
+        padding: 1.6rem;
+        border-radius: 50%;
+        border: 2px solid rgb(154, 154, 154, 0.2);
+      }
+    }
+    ul.nav-desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      a {
+        &:hover {
+          color: var(--lightning);
+        }
+      }
+    }
+
+    // NAV MOBILE
+    ul.nav-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      ion-icon {
+        color: var(--default);
+        width: 2.2rem;
+        height: 2.2rem;
+        transition: var(--fade-colors);
+        &:hover {
+          color: white;
+        }
+      }
+      a {
+        transition: var(--fade-colors);
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  min-height: 50rem;
+  margin: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  img:first-child {
+    border-radius: 50%;
+    width: 12rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    filter: grayscale(0.8);
+  }
+  .hero--name {
+    @include flex-center;
+    gap: 1rem;
+
+    img {
+      width: 2rem;
+    }
+  }
+
+  h1 {
+    line-height: 6.5rem;
+  }
+}
+
+.proficiency {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 4rem;
+  min-height: 60rem;
+
+  h2 {
+    line-height: 4rem;
+  }
+
+  .cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 26rem));
+    gap: 1rem;
+    .card {
+      min-height: 34.6rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 14rem 2rem 3rem 2rem;
+      background: rgb(26, 26, 26);
+      border: 2px solid rgb(154, 154, 154, 0.2);
+      gap: 2rem;
+    }
+  }
+}
+
+.next-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  min-height: 40rem;
+}
+
+footer {
+  margin: 4rem 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+
+    ul.nav-desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      a {
+        &:hover {
+          color: var(--lightning);
+        }
+      }
+    }
+
+    // NAV MOBILE
+    ul.nav-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      a {
+        transition: var(--fade-colors);
+        &:hover {
+          color: white;
+        }
+      }
+      ion-icon {
+        color: var(--default);
+        width: 2.2rem;
+        height: 2.2rem;
+        transition: var(--fade-colors);
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
