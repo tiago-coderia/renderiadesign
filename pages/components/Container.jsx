@@ -69,7 +69,7 @@ function Container() {
           Building Landing Pages <br />and Web Interfaces. <br />Expert in UI
           & UX!
         </h1>
-        <a href="" class="btn-primary"
+        <a href="https://www.behance.net/askdot" target="_blank" class="btn-primary"
           >Lastes Shots <ion-icon name="add-outline"></ion-icon
         ></a>
       </section>
