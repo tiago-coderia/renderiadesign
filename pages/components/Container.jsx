@@ -63,7 +63,7 @@ function Container() {
         <Image src="/profile.jpg" class="d-block w-100" alt="..." width={150} height={150}/>
         <div class="hero--name">
           <p>Hi, I'm Tiago, from Blumenau - Brazil</p>
-          <img src="media/handshaking.svg" />
+          <img src="/handshaking.svg" />
         </div>
         <h1 class="gradient-text">
           Building Landing Pages <br />and Web Interfaces. <br />Expert in UI
@@ -82,7 +82,7 @@ function Container() {
         </div>
         <div class="cards">
           <div class="card card-uix">
-            <img src="media/icon-uxui.svg" alt="" />
+            <img src="/icon-uxui.svg" alt="" />
             <h5 class="gradient-text">UX & UI</h5>
             <p>
               Designing interfaces that are intuitive, efficient, and
@@ -90,7 +90,7 @@ function Container() {
             </p>
           </div>
           <div class="card card-webMobile">
-            <img src="media/icon-webmobile.svg" alt="" />
+            <img src="/icon-webmobile.svg" alt="" />
             <h5 class="gradient-text">Web & Mobile App</h5>
             <p>
               Transforming ideas into exceptional web and mobile app
@@ -98,7 +98,7 @@ function Container() {
             </p>
           </div>
           <div class="card card-design">
-            <img src="media/icon-designcreative.svg" alt="" />
+            <img src="/icon-designcreative.svg" alt="" />
             <h5 class="gradient-text">Design & Creative</h5>
             <p>
               Crafting visually stunning designs that connect with your
@@ -106,7 +106,7 @@ function Container() {
             </p>
           </div>
           <div class="card card-development">
-            <img src="media/icon-development.svg" alt="" />
+            <img src="/icon-development.svg" alt="" />
             <h5 class="gradient-text">Development</h5>
             <p>
               Bringing your vision to life with the latest technology and

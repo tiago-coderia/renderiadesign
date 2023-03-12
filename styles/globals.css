@@ -129,6 +129,28 @@ p {
   ul.nav-mobile {
     display: flex !important;
   }
+
+  .hero {
+    min-height: 75rem;
+  }
+
+  .hero h1 {
+    font-size: 3.6rem;
+    line-height: 3.5rem !important;
+  }
+
+  .proficiency h2 {
+    font-size: 1.8rem;
+    line-height: 2.3rem !important;
+  }
+
+  .proficiency .cards {
+    grid-template-columns: repeat(auto-fit, minmax(26rem, max-content)) !important;
+  }
+
+  .next-project h1 {
+    font-size: 4.3rem;
+  }
 }
 
 header {
