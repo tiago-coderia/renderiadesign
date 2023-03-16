@@ -226,7 +226,7 @@ header nav ul.nav-mobile a:hover {
 .proficiency .cards {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 26rem));
+  grid-template-columns: repeat(auto-fit, minmax(26rem, max-content));
   gap: 1rem;
 }
 .proficiency .cards .card {
@@ -289,4 +289,16 @@ footer nav ul.nav-mobile ion-icon {
 }
 footer nav ul.nav-mobile ion-icon:hover {
   color: white;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.6rem;
+    line-height: 4.5rem !important;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    line-height: 3rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */

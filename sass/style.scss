@@ -110,7 +110,7 @@ header {
   .cards {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 26rem));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, max-content));
     gap: 1rem;
     .card {
       min-height: 34.6rem;
@@ -178,5 +178,17 @@ footer {
         }
       }
     }
+  }
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.6rem;
+    line-height: 4.5rem !important;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    line-height: 3rem !important;
   }
 }
