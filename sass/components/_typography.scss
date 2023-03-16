@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap");
+
+h1 {
+  font-size: 5.6rem;
+  font-weight: 400;
+  font-family: "Outfit", sans-serif !important;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 2.08rem;
+}
+
+h5 {
+  font-size: 2.08rem;
+  font-weight: normal;
+  color: var(--h5);
+}
+p {
+  font-size: 1.4rem;
+  @include gradient-text;
+}

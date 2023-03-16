@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap");
-
 html {
   font-size: var(--resetRem);
 }
@@ -34,7 +33,6 @@ a {
   text-decoration: none;
   transition: color 500ms ease;
 }
-
 a:hover {
   color: var(--lightning);
 }
@@ -51,7 +49,6 @@ a:hover {
   gap: 1rem;
   transition: all 500ms ease;
 }
-
 .btn-primary:hover {
   transform: scale(1.02);
 }
@@ -115,51 +112,24 @@ p {
   ul.nav-desktop {
     display: flex !important;
   }
-
   ul.nav-mobile {
     display: none !important;
   }
 }
-
 @media (max-width: 76.8rem) {
   ul.nav-desktop {
     display: none !important;
   }
-
   ul.nav-mobile {
     display: flex !important;
   }
-
-  .hero {
-    min-height: 75rem;
-  }
-
-  .hero h1 {
-    font-size: 3.6rem;
-    line-height: 3.5rem !important;
-  }
-
-  .proficiency h2 {
-    font-size: 1.8rem;
-    line-height: 2.3rem !important;
-  }
-
-  .proficiency .cards {
-    grid-template-columns: repeat(auto-fit, minmax(26rem, max-content)) !important;
-  }
-
-  .next-project h1 {
-    font-size: 4.3rem;
-  }
 }
-
 header {
   height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 header nav {
   display: flex;
   justify-content: space-between;
@@ -167,14 +137,12 @@ header nav {
   width: 100%;
   padding: 0 2rem;
 }
-
 header nav .get-in-touch {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-
 header nav .get-in-touch ion-icon {
   color: var(--default);
   width: 2.2rem;
@@ -184,40 +152,33 @@ header nav .get-in-touch ion-icon {
   border-radius: 50%;
   border: 2px solid rgba(154, 154, 154, 0.2);
 }
-
 header nav ul.nav-desktop {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-
 header nav ul.nav-desktop a:hover {
   color: var(--lightning);
 }
-
 header nav ul.nav-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-
 header nav ul.nav-mobile ion-icon {
   color: var(--default);
   width: 2.2rem;
   height: 2.2rem;
   transition: var(--fade-colors);
 }
-
 header nav ul.nav-mobile ion-icon:hover {
   color: white;
 }
-
 header nav ul.nav-mobile a {
   transition: var(--fade-colors);
 }
-
 header nav ul.nav-mobile a:hover {
   color: white;
 }
@@ -231,26 +192,23 @@ header nav ul.nav-mobile a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .hero img:first-child {
   border-radius: 50%;
+  width: 12rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 1/1;
   filter: grayscale(0.8);
 }
-
 .hero .hero--name {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-
 .hero .hero--name img {
   width: 2rem;
 }
-
 .hero h1 {
   line-height: 6.5rem;
 }
@@ -262,18 +220,15 @@ header nav ul.nav-mobile a:hover {
   gap: 4rem;
   min-height: 60rem;
 }
-
 .proficiency h2 {
   line-height: 4rem;
 }
-
 .proficiency .cards {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(26rem, 26rem));
   gap: 1rem;
 }
-
 .proficiency .cards .card {
   min-height: 34.6rem;
   display: flex;
@@ -298,7 +253,6 @@ header nav ul.nav-mobile a:hover {
 footer {
   margin: 4rem 0;
 }
-
 footer nav {
   display: flex;
   justify-content: space-between;
@@ -306,42 +260,33 @@ footer nav {
   width: 100%;
   padding: 0 2rem;
 }
-
 footer nav ul.nav-desktop {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-
 footer nav ul.nav-desktop a:hover {
   color: var(--lightning);
 }
-
 footer nav ul.nav-mobile {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-
 footer nav ul.nav-mobile a {
   transition: var(--fade-colors);
 }
-
 footer nav ul.nav-mobile a:hover {
   color: white;
 }
-
 footer nav ul.nav-mobile ion-icon {
   color: var(--default);
   width: 2.2rem;
   height: 2.2rem;
   transition: var(--fade-colors);
 }
-
 footer nav ul.nav-mobile ion-icon:hover {
   color: white;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
