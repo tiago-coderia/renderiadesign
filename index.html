@@ -17,7 +17,8 @@
       <nav>
         <div class="get-in-touch">
           <ion-icon name="mail-outline"></ion-icon>
-          <a href="mailto:tiago.coderia@gmail.com">Get in Touch</a>
+          <a href="mailto:tiago.coderia@gmail.com" class="changeText" onmouseover="newText()"
+            onmouseleave="originalText()">Get in Touch</a>
         </div>
         <ul class="nav-desktop">
           <li>
@@ -188,6 +189,26 @@
   <!-- SCRIPTS -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+
+    const textoOriginal = document.querySelector('.changeText');
+
+    function newText() {
+      if (window.innerWidth <= 640) {
+        textoOriginal.innerHTML = 'Get in Touch'
+      } else {
+        textoOriginal.innerHTML = 'tiago.coderia@gmail.com'
+        textoOriginal.style.color = 'var(--lightning)'
+      }
+    }
+
+    function originalText() {
+      textoOriginal.innerHTML = 'Get in Touch'
+      textoOriginal.style.color = 'var(--default)'
+    }
+
+  </script>
 </body>
 
 </html>
