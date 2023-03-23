@@ -69,12 +69,12 @@ header {
 
 .hero {
   text-align: center;
-  min-height: 50rem;
-  margin: 6rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  gap: var(--gap);
+  padding: 3rem 0;
   img:first-child {
     border-radius: 50%;
     width: 12rem;
@@ -99,9 +99,7 @@ header {
 .proficiency {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  gap: 4rem;
-  min-height: 60rem;
+  gap: var(--gap);
 
   h2 {
     line-height: 4rem;
@@ -110,7 +108,7 @@ header {
   .cards {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 26rem));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, max-content));
     gap: 1rem;
     .card {
       min-height: 34.6rem;
@@ -125,14 +123,71 @@ header {
   }
 }
 
+.portfolio {
+  padding: 3rem 0;
+  .cards-portfolio {
+    grid-template-columns: repeat(auto-fill, minmax(366px, max-content));
+    .card-portfolio {
+      aspect-ratio: 1.5 / 1;
+      border-radius: 0.5rem;
+      position: relative;
+      transition: 500ms ease-in-out all;
+      background: rgb(29, 29, 29);
+      &::after {
+        filter: blur(0.5rem);
+      }
+      &:hover {
+        border: 0px solid transparent;
+        background: var(--darkness);
+        transition: 500ms ease-in-out all;
+        &::before,
+        &::after {
+          content: "";
+          transition: 500ms ease-in-out all;
+          position: absolute;
+          inset: -0.3rem;
+          background: conic-gradient(
+            from var(--gradient-angle),
+            var(--clr-3),
+            var(--clr-4),
+            var(--clr-5),
+            var(--clr-4),
+            var(--clr-3)
+          );
+          border-radius: inherit;
+          animation: rotation 2s linear infinite;
+          z-index: -1;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+      filter: grayscale(1);
+      transition: 500ms ease all;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
+}
+
 .next-project {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 2rem;
-  min-height: 40rem;
+  gap: var(--gap);
 }
 
 footer {

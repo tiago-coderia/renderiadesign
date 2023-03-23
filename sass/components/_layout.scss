@@ -1,3 +1,19 @@
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --clr-1: #002029;
+  --clr-2: #00303d;
+  --clr-3: #004052;
+  --clr-4: #005066;
+  --clr-5: #cc803a;
+
+  --gap: 3rem;
+}
+
 html {
   font-size: var(--resetRem);
 }
@@ -59,4 +75,20 @@ a {
 
 .border-bottom {
   border-bottom: 1px solid rgb(154, 154, 154, 0.1);
+}
+
+.grid {
+  display: grid;
+}
+
+.columns-200 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }

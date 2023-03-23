@@ -23,3 +23,14 @@ p {
   font-size: 1.4rem;
   @include gradient-text;
 }
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem !important;
+  }
+  h2 {
+    font-size: 1.8rem;
+    line-height: 2rem !important;
+  }
+}
