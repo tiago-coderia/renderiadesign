@@ -23,8 +23,9 @@ export default function Home() {
   return (
     <main className="max-w-screen-lg mx-auto flex flex-col gap-5 px-4">
       <Head>
-        <title>Renderia™</title>
+        <title>Renderia © 2023</title>
       </Head>
+      <Header />
       <Hero />
       <Stack />
       <LastProjects />
