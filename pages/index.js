@@ -7,6 +7,7 @@ import Stack from "./components/Stack";
 import LastProjects from "./components/LastProjects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,9 +22,9 @@ const outfit = Outfit({
 export default function Home() {
   return (
     <main className="max-w-screen-lg mx-auto flex flex-col gap-5 px-4">
-      <Header>
+      <Head>
         <title>Renderia™</title>
-      </Header>
+      </Head>
       <Hero />
       <Stack />
       <LastProjects />
