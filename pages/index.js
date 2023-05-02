@@ -21,7 +21,9 @@ const outfit = Outfit({
 export default function Home() {
   return (
     <main className="max-w-screen-lg mx-auto flex flex-col gap-5 px-4">
-      <Header />
+      <Header>
+        <title>Renderia™</title>
+      </Header>
       <Hero />
       <Stack />
       <LastProjects />
