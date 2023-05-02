@@ -32,6 +32,11 @@ const LastProjects = () => {
           descricao="Clinica Ochoa | Worpdress"
           endereco="http://clinicaochoa.com.br"
         />
+        <CardPortfolio
+          imgname="site-pokenext"
+          descricao="PokeNext | NextJS | API | Tailwindss"
+          endereco="https://pokenext-m8vuf1zyl-tiago-coding.vercel.app/"
+        />
       </div>
     </div>
   );
