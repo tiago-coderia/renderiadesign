@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="min-h-[100px] flex items-center justify-between border-b-[1px] border-default  border-opacity-10">
+    <div className="min-h-[100px] flex items-center justify-between border-b-[1px] border-default  border-opacity-10 flex-col sm:flex-row py-4 sm:py-0">
       <div>
         <Link
           href="mailto:tiago.coderia@gmail.com"
